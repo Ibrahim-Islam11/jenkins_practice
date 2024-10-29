@@ -1,0 +1,138 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-27T22:26:15.044Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3463650000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "1 - User should be able to login with valid credentials from DB",
+        "description": "",
+        "id": "codefios-login-page-functionality-validation-with-data-from-mysql;1---user-should-be-able-to-login-with-valid-credentials-from-db",
+        "after": [
+          {
+            "result": {
+              "duration": 478721800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1655148100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_Codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1490205700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 661717600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8443630800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 531645000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be landing on the dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_should_be_landing_on_the_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@codefiosLoginWithDataFromDB"
+          },
+          {
+            "name": "@codefiosLoginDBScenario1"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Codefios Login Page Functionality Validation with data from MySQL",
+    "description": "",
+    "id": "codefios-login-page-functionality-validation-with-data-from-mysql",
+    "keyword": "Feature",
+    "uri": "classpath:features/CodefiosLoginDataFromDatabase.feature",
+    "tags": [
+      {
+        "name": "@codefiosLoginWithDataFromDB",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
